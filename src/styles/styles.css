@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    background: #8c8cce;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.column.tick {
+    background-image: url('../../public/img/tick.svg');
+    background-size: cover;
+}
+
+.column.circle {
+    background-image: url('../../public/img/circle.svg');
+    background-size: cover;
+}
+
+.column.empty {
+    background: none;
+}
+
+.column.winner {
+    background-color: purple;
+}
